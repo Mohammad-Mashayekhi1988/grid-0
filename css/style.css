@@ -7,15 +7,12 @@ body{
 .container{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,200px);
     margin: 2rem auto;
-    grid-gap:1rem
-    grid-template-rows:
+    grid-gap:1rem;
+    grid-template-rows: auto 300px auto;
 }
-.img{
-    width: 200px;
-    height: 150px;
-}
+
 img{
     border-radius: 0.5rem;
     width: 100%;
