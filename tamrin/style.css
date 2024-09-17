@@ -1,0 +1,38 @@
+body {
+    color: #fff;
+    display: grid;
+    /* grid-template-columns: 2fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 2fr 1fr 1fr);
+    grid-template: "header header header" 200px"main . side" 400px"footer footer footer" 500px;
+}
+
+header {
+    background-color: red;
+    grid-area: header;
+
+}
+
+main {
+    background-color: blue;
+    grid-area: main;
+
+}
+
+aside {
+    background-color: green;
+    grid-area: side;
+
+}
+
+footer {
+    background-color: yellow;
+    grid-area: footer;
+
+}
+
+@media(max-width:900px) {
+    body {
+        background-color: black;
+    }
+
+}
